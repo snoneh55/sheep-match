@@ -22,6 +22,9 @@ body{background:#bdf782;min-height:100svh}.shell{max-width:460px;padding:0 5px;m
 /* Size the field to the visible browser area, including WeChat toolbars. */
 body{min-height:0}.topbar{height:42px}.brand-name{font-size:17px}.header-actions{top:2px}.tray-section{padding-top:6px}.tools{padding:9px 14px 5px;gap:10px}.game{padding-bottom:max(7px,env(safe-area-inset-bottom))}.board{margin:0 auto}.tray-label{margin-bottom:4px}
 .tool span{font-size:12px;letter-spacing:0;white-space:nowrap}.tool{gap:4px}
+.play-progress{height:29px;margin:0 7px 3px;display:flex;align-items:flex-start;justify-content:space-between;position:relative;font-size:11px;color:#35561c;line-height:21px;font-weight:650;gap:8px}.play-progress>span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.play-progress>span:nth-child(2){white-space:nowrap;font-variant-numeric:tabular-nums}.round-track{position:absolute;left:0;right:0;bottom:1px;height:4px;border-radius:4px;background:#80ac4850;overflow:hidden}.round-track i{height:100%;display:block;background:#497a27;border-radius:4px;transition:width .28s}.collection-view{padding:18px 17px;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}.collection-view .modal-art{display:none}.collection-view .modal-title{font-size:22px;margin:2px 0 6px}.collection-view .modal-copy{font-size:12px;margin:5px 0 12px;line-height:1.7}.collection-content{text-align:left}.collection-view .modal-actions{margin-top:15px}.collection-view .modal-actions button{min-height:44px}.farm-scene{display:block;width:100%;height:auto;border:1.5px solid #789a49;border-radius:12px;margin:0 auto 12px}.record-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;text-align:center}.record-stats>div{background:#e4efbb;border-radius:9px;padding:10px 3px}.record-stats b{display:block;font-size:22px;color:#365b21;line-height:1.2}.record-stats span{display:block;font-size:10px;color:#5d713e;margin-top:5px}.farm-growth{height:7px;background:#d8e6ad;border-radius:5px;margin:12px 0 7px;overflow:hidden}.farm-growth i{display:block;height:100%;border-radius:5px;background:#7caa41}.panel-note{font-size:11px;line-height:1.8;color:#667b47;margin:8px 0 4px}.achievement{display:flex;gap:10px;align-items:center;border:1.5px solid #b4c987;border-radius:10px;padding:10px;margin:8px 0;background:#eaf4ca}.achievement.locked{background:#eff1da;color:#69705b;border-color:#d0d5b8}.badge-art{width:43px;height:43px;flex:none;border-radius:50%;padding:5px;background:#d8e9a9}.badge-art svg{width:100%;height:100%}.locked .badge-art{filter:grayscale(1);opacity:.45;background:#e0e4ce}.achievement strong{font-size:13px}.achievement p{font-size:11px;line-height:1.6;margin:3px 0;color:#5b7043}.achievement small{font-size:10px;color:#6e8250}.locked p,.locked small{color:#7c836b}.reward-stars{display:flex;justify-content:center;gap:10px;margin:15px 0}.reward-stars svg{width:43px;height:43px;fill:#f4cb52;stroke:#ae7928;stroke-width:1.2}.reward-stars .unlit{fill:#d8dfbc;stroke:#aab88a}.victory-stars .lit{animation:earn-star .5s both;animation-delay:var(--star-delay);filter:drop-shadow(0 3px 0 #d4a13a55)}@keyframes earn-star{from{opacity:0;transform:scale(.35) rotate(-18deg)}70%{opacity:1;transform:scale(1.15)}to{opacity:1;transform:scale(1)}}.small-stars{gap:4px;margin:0}.small-stars svg{width:18px;height:18px}.mode-records{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:15px}.mode-record{display:flex;flex-direction:column;align-items:center;gap:8px;background:#e3eeb8;border-radius:9px;padding:11px 3px;font-size:12px}.mode-record>span{font-size:10px;color:#677b4b}.daily-card{padding:12px 14px;border:1.5px solid #b7ce89;background:#e7f1c2;border-radius:11px;font-size:12px;line-height:1.8;color:#526c35}.daily-card p{margin:5px 0 9px}.daily-card p:last-child{margin-bottom:0}.daily-card strong{font-size:14px;color:#34541f}.rating-note{text-align:center;font-size:12px;line-height:1.8;color:#5b713e}.result-summary{display:flex;flex-direction:column;text-align:center;gap:5px;background:#e3efb8;border-radius:10px;padding:11px;font-size:13px;color:#365b21}.result-summary span{font-size:11px;color:#69804a}.farm-reward{border:1.5px solid #bfd28c;border-radius:12px;margin-top:12px;padding:10px;text-align:center;background:#ecf6cf}.farm-reward .farm-scene{max-width:210px;margin-bottom:8px}.farm-reward strong{font-size:13px;display:block;color:#365b21}.farm-reward>span{font-size:10px;display:block;color:#69804a;margin-top:5px}.new-badges{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px}.new-badges span{font-size:11px;background:#ffe4a0;border:1px solid #d9ae50;border-radius:20px;padding:5px 8px;color:#82541e}.menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.menu-grid button{min-height:48px;border:1.5px solid #b2c97b;background:#e6f2bd;border-radius:9px;font:inherit;font-size:12px;color:#3c5a27;padding:8px 4px}.menu-grid button:active{background:#d4e8a0}.settings-summary{font-size:12px;color:#5c733c;text-align:center;margin:5px 0 11px}.collection-view .settings-grid{margin-bottom:10px}.settings-grid button{min-height:44px}#backup-input{display:none}
+
+button{touch-action:manipulation}.tile.queued,.mini-tile.queued{outline:3px solid #ffcc38;outline-offset:-3px}.tile.queued::after,.mini-tile.queued::after{content:'已选';position:absolute;right:0;bottom:0;background:#ffdc63;color:#3c4b1b;font-size:9px;line-height:15px;padding:0 3px;border-radius:3px 0 1px 0;pointer-events:none}
 </style>
 </head>
 <body>
@@ -69,6 +72,7 @@ body{min-height:0}.topbar{height:42px}.brand-name{font-size:17px}.header-actions
 <div class="small-note"><svg class="icon"><use href="#leaf"/></svg><span>没有倒计时，也没有广告。<br>慢慢来，这里只属于你。</span></div></aside>
 <section class="game" aria-label="消除游戏"><div class="game-top"><div class="modes" aria-label="选择难度"><button class="mode" data-mode="easy" aria-pressed="false">轻松</button><button class="mode" data-mode="normal" aria-pressed="false">标准</button><button class="mode" data-mode="hard" aria-pressed="false">挑战</button></div><button class="restart" id="restart-btn"><svg class="icon"><use href="#restart"/></svg>新一局</button></div>
 <div class="game-meta"><span class="field-label" id="level-label">午后小牧场</span><span><span class="mobile-stat" id="mobile-progress"></span><span id="board-count"></span></span></div>
+<div class="play-progress" aria-label="本局进度"><span id="round-label">挑战 · 自由练习</span><span id="round-cleared">已消 0 / 192</span><div class="round-track"><i id="round-progress"></i></div></div>
 <div class="board" id="board" aria-label="卡牌区"><svg class="ground" viewBox="0 0 420 365" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m13 81 3-7 3 7 4-4m370 10 3-7 3 7 4-4M18 304l3-8 3 8 4-4m363 27 3-8 3 8 4-4m-199 19 3-7 3 7 4-4"/></g><g fill="#d5dfbf"><circle cx="44" cy="50" r="2"/><circle cx="377" cy="263" r="2"/><circle cx="81" cy="335" r="2"/><circle cx="332" cy="32" r="2"/></g></svg></div>
 <div class="tray-section"><div class="tray-label"><span>凑齐三张，一起消除</span><b id="tray-count">0 / 7</b></div><div class="tray" id="tray" aria-label="收集槽"></div><p class="tray-message" id="tray-message">先看一看，再选一张。</p></div>
 <div class="tools"><button class="tool" id="undo-btn" title="撤回最近一次操作（Z）"><svg class="icon"><use href="#undo"/></svg><span>撤回</span><small>返回上一步</small></button><button class="tool" id="shuffle-btn"><svg class="icon"><use href="#shuffle"/></svg><span>洗牌 2/2</span><small>每局两次</small></button><button class="tool" id="pocket-btn"><svg class="icon"><use href="#pocket-icon"/></svg><span>挪走 1/1</span><small>失败后挪走三张</small></button><button class="tool" id="hint-btn"><svg class="icon"><use href="#spark"/></svg><span>提示</span><small>一点小灵感</small></button></div>
@@ -76,6 +80,7 @@ body{min-height:0}.topbar{height:42px}.brand-name{font-size:17px}.header-actions
 <aside class="side"><div class="side-title"><svg class="icon"><use href="#leaf"/></svg>这一局的小收获</div><div class="progress-value"><b id="cleared">0</b><span>/ <span id="total">69</span> 张</span></div><div class="progress-track"><i id="progress" style="width:0%"></i></div><div class="stat-row"><span>牧场时光</span><b id="timer">00:00</b></div><div class="stat-row"><span>操作次数</span><b id="moves">0</b></div><div class="stat-row"><span>累计通关</span><b id="wins">0</b></div><hr class="divider"><div class="side-title">小小的玩法，大大的快乐</div><div class="rule"><span class="rule-num">1</span><span>点击没有被遮挡的卡牌，放进下方收集槽。</span></div><div class="rule"><span class="rule-num">2</span><span>凑齐三个相同图案，<br>它们就会一起消失。</span></div><div class="rule"><span class="rule-num">3</span><span>洗牌每局两次，失败后可挪走三张一次。<br>清空所有卡牌就赢啦。</span></div><p class="side-foot">每个新局都有一条通关路线。<br>洗牌两次，失败后可挪走三张一次。</p></aside>
 </main><footer class="footer"><span id="save-status"><i class="save-dot"></i>进度自动留在这台设备</span><div class="footer-right"><span>离线也能玩</span><button id="download-btn">保存游戏文件 ↓</button></div></footer>
 </div><div class="toast" id="toast" role="status" aria-live="polite"></div><dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+<input type="file" id="backup-input" accept=".json,application/json" aria-label="选择羊咩咩存档">
 <script id="game-engine">
 "use strict";
 const SheepCore = (() => {
@@ -108,7 +113,7 @@ const SheepCore = (() => {
       const patches=[[41,172],[105,172],[105,236],[233,364],[297,364],[233,428],[169,108],[169,300],[41,428]];
       patches.forEach(([x,y])=>add(x,y,3));
     }
-    const route=order(tiles,random),remaining=Array(12).fill(0),held=Array(12).fill(0);for(let i=0;i<tiles.length/3;i++)remaining[i%cfg.types]+=3;let occupied=0;for(const id of route){const choices=[];for(let type=0;type<cfg.types;type++){if(!remaining[type])continue;const c=held[type];if(c!==2&&occupied>=6)continue;if(occupied===5&&c===0&&!held.includes(2))continue;let weight=mode!=='easy'?(c===2?(occupied>=6?18:1):c===1?2:9):c===2?(occupied>=cfg.target?8:1):c===1?3:occupied<cfg.target?5:1;for(let w=0;w<weight;w++)choices.push(type);}if(!choices.length)throw Error('关卡生成失败');const type=choices[Math.floor(random()*choices.length)];tiles[id].type=type;remaining[type]--;held[type]++;occupied++;if(held[type]===3){held[type]=0;occupied-=3;}}return {version:8,mode,seed,tiles,tray:[],reserve:[],plan:route,moves:0,seconds:0,shuffleUsed:0,rescueUsed:0,phase:'playing',credited:false};}
+    const route=order(tiles,random),remaining=Array(12).fill(0),held=Array(12).fill(0);for(let i=0;i<tiles.length/3;i++)remaining[i%cfg.types]+=3;let occupied=0;for(const id of route){const choices=[];for(let type=0;type<cfg.types;type++){if(!remaining[type])continue;const c=held[type];if(c!==2&&occupied>=6)continue;if(occupied===5&&c===0&&!held.includes(2))continue;let weight=mode!=='easy'?(c===2?(occupied>=6?18:1):c===1?2:9):c===2?(occupied>=cfg.target?8:1):c===1?3:occupied<cfg.target?5:1;for(let w=0;w<weight;w++)choices.push(type);}if(!choices.length)throw Error('关卡生成失败');const type=choices[Math.floor(random()*choices.length)];tiles[id].type=type;remaining[type]--;held[type]++;occupied++;if(held[type]===3){held[type]=0;occupied-=3;}}return {version:8,mode,seed,tiles,tray:[],reserve:[],plan:route,moves:0,seconds:0,shuffleUsed:0,rescueUsed:0,undoUsed:0,hintUsed:0,hadLoss:false,ratingEligible:true,kind:'random',dailyDate:null,phase:'playing',credited:false};}
   // Score two simple strategies: complete visible triples first, then prefer pairs.
   // A low score means both strategies get stuck early; it is not a human win rate.
   function greedyProgress(source,preferDeep){
@@ -138,28 +143,91 @@ const SheepCore = (() => {
     best.seed=seed;return best;
   }
   const layoutCache={};
-  function status(s){s.phase=s.tiles.every(t=>t.loc==='gone')?'won':s.tray.length>=7?'lost':'playing';}
+  function status(s){s.phase=s.tiles.every(t=>t.loc==='gone')?'won':s.tray.length>=7?'lost':'playing';if(s.phase==='lost')s.hadLoss=true;}
   function take(s,id){const t=s.tiles[id];if(s.phase!=='playing'||!t||!(t.loc==='reserve'||free(s,t)))return null;if(t.loc==='reserve')s.reserve.splice(s.reserve.indexOf(id),1);t.loc='tray';let last=-1;s.tray.forEach((n,i)=>{if(s.tiles[n].type===t.type)last=i;});s.tray.splice(last<0?s.tray.length:last+1,0,id);const same=s.tray.filter(n=>s.tiles[n].type===t.type);if(same.length===3){s.tray=s.tray.filter(n=>!same.includes(n));same.forEach(n=>s.tiles[n].loc='gone');}s.moves++;status(s);return {matched:same.length===3,type:t.type};}
   function stash(s){if(s.phase!=='lost'||s.rescueUsed>=1||s.reserve.length||s.tray.length!==7)return false;s.reserve=s.tray.splice(0,3);s.reserve.forEach(id=>s.tiles[id].loc='reserve');s.rescueUsed++;s.moves++;status(s);return true;}
   // Construct a legal completion while preserving every remaining tile count.
   function reshuffle(s,seed){if(s.phase!=='playing'||s.shuffleUsed>=2)return false;const random=rng(seed),route=order(s.tiles,random),bag=counts(s,route),held=counts(s,s.tray),reserve=s.reserve.slice(),assignments=[],plan=[];let occupied=s.tray.length,index=0;while(index<route.length||reserve.length){const candidates=[];for(let t=0;t<12;t++){const available=bag[t]+reserve.filter(id=>s.tiles[id].type===t).length,need=3-held[t];if(available>=need&&occupied+need-1<7)candidates.push(t);}if(!candidates.length)return false;candidates.sort((a,b)=>held[b]-held[a]);const highest=held[candidates[0]],preferred=candidates.filter(t=>held[t]===highest);const type=preferred[Math.floor(random()*preferred.length)],need=3-held[type];for(let n=0;n<need;n++){const r=reserve.findIndex(id=>s.tiles[id].type===type);if(r>=0)plan.push(reserve.splice(r,1)[0]);else{if(!bag[type])return false;const id=route[index++];assignments.push([id,type]);plan.push(id);bag[type]--;}}occupied-=held[type];held[type]=0;}assignments.forEach(([id,type])=>s.tiles[id].type=type);s.plan=plan;s.shuffleUsed++;s.moves++;return true;}
-  function valid(s){if(s&&s.version===8){s.shuffleUsed??=0;s.rescueUsed??=(Array.isArray(s.reserve)&&s.reserve.length?1:0);}if(!s||s.version!==8||!Number.isInteger(s.shuffleUsed)||s.shuffleUsed<0||s.shuffleUsed>2||!Number.isInteger(s.rescueUsed)||s.rescueUsed<0||s.rescueUsed>1||!modes[s.mode]||!Array.isArray(s.tiles)||s.tiles.length!==modes[s.mode].layers.reduce((n,[a,b])=>n+a*b,0)||!Array.isArray(s.tray)||!Array.isArray(s.reserve)||s.tray.length>7||s.reserve.length>3||!Number.isFinite(s.seconds)||s.seconds<0||!Number.isInteger(s.moves)||s.moves<0)return false;const layout=layoutCache[s.mode]??(layoutCache[s.mode]=generate(s.mode,1).tiles);if(!s.tiles.every((t,i)=>t&&t.id===i&&t.x===layout[i].x&&t.y===layout[i].y&&t.z===layout[i].z&&Number.isInteger(t.type)&&t.type>=0&&t.type<12&&['board','tray','reserve','gone'].includes(t.loc)))return false;const ids=[...s.tray,...s.reserve];if(new Set(ids).size!==ids.length||!ids.every(id=>Number.isInteger(id)&&id>=0&&id<s.tiles.length))return false;if(!s.tiles.every(t=>(t.loc==='tray')===s.tray.includes(t.id)&&(t.loc==='reserve')===s.reserve.includes(t.id)))return false;const total=counts(s,s.tiles.filter(t=>t.loc!=='gone').map(t=>t.id));if(total.some(n=>n%3))return false;const old=s.phase;status(s);if(old!==s.phase)return false;s.plan=Array.isArray(s.plan)?s.plan.filter(id=>Number.isInteger(id)&&id>=0&&id<s.tiles.length):[];return true;}
+  function valid(s){if(s&&s.version===8){s.shuffleUsed??=0;s.rescueUsed??=(Array.isArray(s.reserve)&&s.reserve.length?1:0);s.undoUsed??=0;s.hintUsed??=0;s.hadLoss??=(s.phase==='lost'||s.rescueUsed>0);s.ratingEligible??=s.moves===0;s.kind??='random';s.dailyDate??=null;}if(!s||s.version!==8||!Number.isSafeInteger(s.undoUsed)||s.undoUsed<0||!Number.isSafeInteger(s.hintUsed)||s.hintUsed<0||typeof s.hadLoss!=='boolean'||typeof s.ratingEligible!=='boolean'||!['random','daily'].includes(s.kind)||(s.kind==='daily'&&(s.mode!=='normal'||typeof s.dailyDate!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(s.dailyDate)))||!Number.isInteger(s.shuffleUsed)||s.shuffleUsed<0||s.shuffleUsed>2||!Number.isInteger(s.rescueUsed)||s.rescueUsed<0||s.rescueUsed>1||!modes[s.mode]||!Array.isArray(s.tiles)||s.tiles.length!==modes[s.mode].layers.reduce((n,[a,b])=>n+a*b,0)||!Array.isArray(s.tray)||!Array.isArray(s.reserve)||s.tray.length>7||s.reserve.length>3||!Number.isFinite(s.seconds)||s.seconds<0||!Number.isInteger(s.moves)||s.moves<0)return false;const layout=layoutCache[s.mode]??(layoutCache[s.mode]=generate(s.mode,1).tiles);if(!s.tiles.every((t,i)=>t&&t.id===i&&t.x===layout[i].x&&t.y===layout[i].y&&t.z===layout[i].z&&Number.isInteger(t.type)&&t.type>=0&&t.type<12&&['board','tray','reserve','gone'].includes(t.loc)))return false;const ids=[...s.tray,...s.reserve];if(new Set(ids).size!==ids.length||!ids.every(id=>Number.isInteger(id)&&id>=0&&id<s.tiles.length))return false;if(!s.tiles.every(t=>(t.loc==='tray')===s.tray.includes(t.id)&&(t.loc==='reserve')===s.reserve.includes(t.id)))return false;const total=counts(s,s.tiles.filter(t=>t.loc!=='gone').map(t=>t.id));if(total.some(n=>n%3))return false;const old=s.phase;status(s);if(old!==s.phase)return false;s.plan=Array.isArray(s.plan)?s.plan.filter(id=>Number.isInteger(id)&&id>=0&&id<s.tiles.length):[];return true;}
   return {modes,clone,rng,free,create,take,stash,reshuffle,valid,status};
 })();
+</script>
+<script id="game-rewards">
+"use strict";
+const SheepRewards=(()=>{
+  const modeNames={easy:'轻松',normal:'标准',hard:'挑战'};
+  const assets=['第一只小羊','野花花坛','木围栏','小果树','饮水池','石板路','红顶小屋','小羊伙伴','风车','满枝苹果','蝴蝶花丛','牧场旗帜'];
+  const badges=[
+    {id:'first',name:'初次归牧',copy:'首次完成一副牌。',icon:'sheep'},
+    {id:'clean',name:'不借外力',copy:'首次获得三星，全程不用道具。',icon:'bell'},
+    {id:'comeback',name:'绝境翻盘',copy:'失败后挪走三张，最终通关。',icon:'fire'},
+    {id:'hard',name:'越过深林',copy:'首次通过挑战难度。',icon:'grass'},
+    {id:'ten',name:'渐入佳境',copy:'不同牌局的最高星级累计达到 10 星。',icon:'corn'},
+    {id:'all',name:'三星牧场',copy:'轻松、标准、挑战各获得一次三星。',icon:'wool'}
+  ];
+  const dateKey=(date=new Date())=>`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
+  function dailySeed(day){let hash=2166136261;for(const c of `sheep-daily-v8:${day}`){hash^=c.charCodeAt(0);hash=Math.imul(hash,16777619);}return hash>>>0;}
+  const key=(mode,seed)=>`${mode}:${seed>>>0}`;
+  const empty=()=>({version:1,legacyWins:0,records:{},badges:{}});
+  const integer=(n,max=10000000)=>Number.isSafeInteger(n)&&n>=0&&n<=max;
+  const dateValid=s=>typeof s==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(s)&&!isNaN(Date.parse(s+'T00:00:00'))&&new Date(s+'T00:00:00').getDate()===Number(s.slice(-2));
+  const stamp=s=>typeof s==='string'&&/^\d{4}-\d\d-\d\dT/.test(s)&&!isNaN(Date.parse(s))?s:'';
+  function normalize(raw,oldWins=0){
+    const p=empty();p.legacyWins=integer(oldWins)?oldWins:0;
+    if(!raw||raw.version!==1){if(p.legacyWins>0)p.badges.first=new Date().toISOString();return p;}
+    p.legacyWins=integer(raw.legacyWins)?raw.legacyWins:0;
+    for(const [id,r] of Object.entries(raw.records||{})){
+      if(!r||!Object.prototype.hasOwnProperty.call(modeNames,r.mode)||!integer(r.seed,4294967295)||id!==key(r.mode,r.seed)||!integer(r.stars,3)||r.stars<1||!integer(r.bestSeconds,31536000))continue;
+      p.records[id]={mode:r.mode,seed:r.seed,stars:r.stars,bestSeconds:r.bestSeconds,wonAt:stamp(r.wonAt),updatedAt:stamp(r.updatedAt),dailyDate:dateValid(r.dailyDate)&&r.mode==='normal'&&dailySeed(r.dailyDate)===r.seed?r.dailyDate:null};
+    }
+    for(const b of badges)if(stamp(raw.badges?.[b.id]))p.badges[b.id]=stamp(raw.badges[b.id]);
+    return p;
+  }
+  const totals=p=>({wins:p.legacyWins+Object.keys(p.records).length,stars:Object.values(p.records).reduce((n,r)=>n+r.stars,0)});
+  const rating=g=>g.ratingEligible===false?1:g.rescueUsed>0?1:g.shuffleUsed>0||g.undoUsed>0||g.hintUsed>0?2:3;
+  function award(profile,game,when=new Date().toISOString()){
+    if(game.phase!=='won')return null;
+    const id=key(game.mode,game.seed),old=profile.records[id],stars=rating(game),before=totals(profile);
+    // Old credited games were already included in the previous win counter.
+    const importedOld=!!game.credited&&!old;
+    if(importedOld&&profile.legacyWins>0)profile.legacyWins--;
+    const score=importedOld?1:stars;
+    profile.records[id]={mode:game.mode,seed:game.seed,stars:Math.max(score,old?.stars||0),bestSeconds:Math.min(game.seconds,old?.bestSeconds??Infinity),wonAt:old?.wonAt||when,updatedAt:when,dailyDate:game.kind==='daily'?game.dailyDate:old?.dailyDate||null};
+    const after=totals(profile),newBadges=[];
+    const matches={first:after.wins>0,clean:Object.values(profile.records).some(r=>r.stars===3),comeback:game.hadLoss&&game.rescueUsed>0,hard:Object.values(profile.records).some(r=>r.mode==='hard'),ten:after.stars>=10,all:Object.keys(modeNames).every(mode=>Object.values(profile.records).some(r=>r.mode===mode&&r.stars===3))};
+    for(const b of badges)if(matches[b.id]&&!profile.badges[b.id]){profile.badges[b.id]=when;newBadges.push(b.id);}
+    const assetIndex=Math.min(before.wins,assets.length);
+    return {stars:score,bestStars:profile.records[id].stars,first:!old&&!importedOld,improved:!!old&&score>old.stars,deltaStars:after.stars-before.stars,newBadges,asset:after.wins>before.wins&&assetIndex<assets.length?assets[assetIndex]:null,importedOld};
+  }
+  function merge(a,b){
+    const p=normalize(a),other=normalize(b);p.legacyWins=Math.max(p.legacyWins,other.legacyWins);
+    for(const [id,r] of Object.entries(other.records)){
+      const old=p.records[id];p.records[id]=old?{...old,stars:Math.max(old.stars,r.stars),bestSeconds:Math.min(old.bestSeconds,r.bestSeconds),dailyDate:old.dailyDate||r.dailyDate,wonAt:[old.wonAt,r.wonAt].filter(Boolean).sort()[0]||'',updatedAt:[old.updatedAt,r.updatedAt].filter(Boolean).sort().at(-1)||''}:r;
+    }
+    for(const b of badges)if(other.badges[b.id])p.badges[b.id]=[p.badges[b.id],other.badges[b.id]].filter(Boolean).sort()[0];
+    const combined=totals(p),records=Object.values(p.records),now=new Date().toISOString();
+    const ready={first:combined.wins>0,clean:records.some(r=>r.stars===3),hard:records.some(r=>r.mode==='hard'),ten:combined.stars>=10,all:Object.keys(modeNames).every(mode=>records.some(r=>r.mode===mode&&r.stars===3))};
+    for(const [id,earned] of Object.entries(ready))if(earned&&!p.badges[id])p.badges[id]=now;
+    return p;
+  }
+  return {modeNames,assets,badges,dateKey,dailySeed,key,empty,normalize,totals,rating,award,merge,dateValid};
+})();
+
 </script>
 <script id="game-ui">
 "use strict";
 (() => {
-  const C=SheepCore,$=id=>document.getElementById(id),icons=['wool','corn','hay','yarn','bucket','fork','carrot','milk','fire','lettuce','grass','bell'],names=['羊毛','玉米','麦捆','毛线','水桶','草叉','胡萝卜','牛奶','篝火','白菜','青草','铃铛'],KEY='sheep-meadow-mobile-grass-v9';
+  const C=SheepCore,R=SheepRewards,$=id=>document.getElementById(id),icons=['wool','corn','hay','yarn','bucket','fork','carrot','milk','fire','lettuce','grass','bell'],names=['羊毛','玉米','麦捆','毛线','水桶','草叉','胡萝卜','牛奶','篝火','白菜','青草','铃铛'],KEY='sheep-meadow-mobile-grass-v9';
   const svg=(name,cls='')=>`<svg ${cls?`class="${cls}"`:''} viewBox="0 0 ${cls==='icon'?'24 24':'64 64'}" aria-hidden="true"><use href="#${name}"/></svg>`;
   const freshSeed=()=>{try{return crypto.getRandomValues(new Uint32Array(1))[0];}catch{return Date.now()>>>0;}};
-  let game,history=[],sound=false,wins=0,storeWorks=true,busy=false,audio,toastTimer,hintTimer,pendingResult,sessionWins=new Set();
-  try{const stored=JSON.parse(localStorage.getItem(KEY));if(stored){sound=stored.sound===true;wins=Number.isSafeInteger(stored.wins)&&stored.wins>=0?stored.wins:0;if(C.valid(stored.game)){game=stored.game;history=Array.isArray(stored.history)?stored.history.filter(C.valid).slice(-80):[];}}}catch{storeWorks=false;}
+  let game,history=[],sound=false,wins=0,profile=R.empty(),storeWorks=true,busy=false,audio,toastTimer,hintTimer,pendingResult,sessionWins=new Set();
+  const pickQueue=[],pendingPickIds=new Set();let drainingPicks=false;
+  try{const stored=JSON.parse(localStorage.getItem(KEY));if(stored){sound=stored.sound===true;profile=R.normalize(stored.profile,stored.wins);wins=R.totals(profile).wins;if(C.valid(stored.game)){game=stored.game;history=Array.isArray(stored.history)?stored.history.filter(C.valid).slice(-80):[];}}}catch{storeWorks=false;}
   if(!game)game=C.create('hard',freshSeed());
-  function save(){try{localStorage.setItem(KEY,JSON.stringify({game,history,sound,wins}));storeWorks=true;}catch{storeWorks=false;}$('save-status').innerHTML=storeWorks?'<i class="save-dot"></i>进度自动留在这台设备':'<span class="offline-warning">本次可正常游玩 · 浏览器未允许存档</span>';}
+  function save(){wins=R.totals(profile).wins;try{localStorage.setItem(KEY,JSON.stringify({game,history,sound,wins,profile}));storeWorks=true;}catch{storeWorks=false;}$('save-status').innerHTML=storeWorks?'<i class="save-dot"></i>进度自动留在这台设备':'<span class="offline-warning">本次可正常游玩 · 浏览器未允许存档</span>';}
   function time(seconds){return `${Math.floor(seconds/60).toString().padStart(2,'0')}:${(seconds%60).toString().padStart(2,'0')}`;}
   function toast(text){clearTimeout(toastTimer);$('toast').textContent=text;$('toast').classList.add('show');toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2700);}
-  function tone(match=false){if(!sound)return;try{audio??=new (window.AudioContext||window.webkitAudioContext)();audio.resume();const notes=match?[523.25,659.25,783.99]:[392];notes.forEach((frequency,i)=>{const oscillator=audio.createOscillator(),gain=audio.createGain(),start=audio.currentTime+i*.075;oscillator.type='sine';oscillator.frequency.value=frequency;gain.gain.setValueAtTime(0,start);gain.gain.linearRampToValueAtTime(.075,start+.01);gain.gain.exponentialRampToValueAtTime(.001,start+.19);oscillator.connect(gain);gain.connect(audio.destination);oscillator.start(start);oscillator.stop(start+.2);});}catch{sound=false;updateSound();}}
+  function tone(match=false){if(!sound)return;try{audio??=new (window.AudioContext||window.webkitAudioContext)();audio.resume();const notes=match?(game.phase==='won'?[523.25,659.25,783.99,1046.5]:[523.25,659.25,783.99]):[392];notes.forEach((frequency,i)=>{const oscillator=audio.createOscillator(),gain=audio.createGain(),start=audio.currentTime+i*.075;oscillator.type='sine';oscillator.frequency.value=frequency;gain.gain.setValueAtTime(0,start);gain.gain.linearRampToValueAtTime(.075,start+.01);gain.gain.exponentialRampToValueAtTime(.001,start+.19);oscillator.connect(gain);gain.connect(audio.destination);oscillator.start(start);oscillator.stop(start+.2);});}catch{sound=false;updateSound();}}
   function updateSound(){$('sound-btn').innerHTML=svg(sound?'sound':'mute','icon');$('sound-btn').setAttribute('aria-pressed',String(sound));$('sound-btn').setAttribute('aria-label',sound?'关闭音效':'开启音效');$('sound-btn').title=sound?'关闭音效':'开启音效';}
   function snapshot(){history.push(C.clone(game));if(history.length>80)history.shift();}
   function render(trayIds=game.tray,flyingId=null){
@@ -170,18 +238,51 @@ const SheepCore = (() => {
     const message=game.phase==='won'?'所有小美好，都被你收集到了。':game.phase==='lost'?'收集槽满了，可撤回；挪走三张每局仅一次。':game.tray.length>=5?'空间不多啦，试着凑齐三张，或撤回调整顺序。':'先看一看，再选一张。';$('tray-message').textContent=message;$('tray-message').classList.toggle('danger',game.tray.length>=5);
     $('pocket').innerHTML='<span class="pocket-label">小口袋<br>点击取回</span>'+Array.from({length:3},(_,i)=>`<div class="slot">${game.reserve[i]!==undefined?`<button class="mini-tile" data-reserve="${game.reserve[i]}" aria-label="取回${names[game.tiles[game.reserve[i]].type]}">${svg(icons[game.tiles[game.reserve[i]].type])}</button>`:''}</div>`).join('');$('pocket').classList.toggle('has-cards',game.reserve.length>0);$('pocket').querySelectorAll('[data-reserve]').forEach(button=>button.addEventListener('click',()=>pick(Number(button.dataset.reserve),button)));
     const cleared=game.tiles.filter(t=>t.loc==='gone').length,total=game.tiles.length; $('cleared').textContent=cleared;$('total').textContent=total;$('progress').style.width=`${cleared/total*100}%`;$('moves').textContent=game.moves;$('timer').textContent=time(game.seconds);$('wins').textContent=wins;$('board-count').textContent=`场上 ${game.tiles.filter(t=>t.loc==='board').length} 张`;$('mobile-progress').textContent=`已消 ${cleared}/${total} · `;$('level-label').textContent=C.modes[game.mode].name;
+    $('round-label').textContent=game.kind==='daily'?`${game.dailyDate.slice(5).replace('-','/')} 每日一局 · 标准`:`${R.modeNames[game.mode]} · 自由练习`;$('round-cleared').textContent=`已消 ${cleared} / ${total}`;$('round-progress').style.width=`${cleared/total*100}%`;
     document.querySelectorAll('.mode').forEach(button=>{const active=button.dataset.mode===game.mode;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
     $('undo-btn').disabled=!history.length;$('shuffle-btn').disabled=game.phase!=='playing'||game.shuffleUsed>=2||!game.tiles.some(t=>t.loc==='board');
     $('shuffle-btn').querySelector('span').textContent=`洗牌 ${2-game.shuffleUsed}/2`;
     $('shuffle-btn').title=`本局剩余 ${2-game.shuffleUsed} 次洗牌`;
     $('pocket-btn').disabled=game.phase!=='lost'||game.rescueUsed>=1||!!game.reserve.length;
     $('pocket-btn').querySelector('span').textContent=`挪走 ${1-game.rescueUsed}/1`;
-    $('pocket-btn').title=game.rescueUsed>=1?'本局挪走三张机会已用完':'收集槽满、失败后可挪走三张，每局一次';$('hint-btn').disabled=game.phase!=='playing';updateSound();fitScreen();
+    $('pocket-btn').title=game.rescueUsed>=1?'本局挪走三张机会已用完':'收集槽满、失败后可挪走三张，每局一次';$('hint-btn').disabled=game.phase!=='playing';updateSound();fitScreen();paintPickQueue();
   }
-  function checkResult(){if(game.phase==='won'){const key=`${game.mode}:${game.seed}`;if(!game.credited&&!sessionWins.has(key)){wins++;sessionWins.add(key);game.credited=true;save();$('wins').textContent=wins;}confetti();showDialog('牧场收集完成！',`你用 ${time(game.seconds)}，完成了 ${game.tiles.length} 张卡牌的消除。\n去下一片草地，还是再享受一下这份小成就？`,[{label:'再玩一局',primary:true,action:()=>start(game.mode)},{label:'看看我的牧场',ghost:true}], 'A LITTLE MOMENT OF JOY');}else if(game.phase==='lost'){showDialog('小口袋有点挤了',`这一局还没有结束。\n${game.rescueUsed>=1?'本局挪走三张机会已用完，可以撤回或重新开始。':'可挪走三张，腾出空间继续；每局仅一次。'}`,[...(game.rescueUsed<1&&!game.reserve.length?[{label:'挪走三张，继续玩（剩1次）',primary:true,action:stash}]:[]),...(history.length?[{label:'撤回上一步',primary:game.rescueUsed>=1||!!game.reserve.length,action:undo}]:[]),{label:'重新开始这一局',action:()=>start(game.mode,game.seed)},{label:'回到牧场',ghost:true}],'TAKE A LITTLE BREATH');}}
-  async function pick(id,element){
-    if(busy||$('modal').open)return;
-    if(game.phase==='lost'){checkResult();return;}
+  function checkResult(){if(game.phase==='won'){showVictory();}else if(game.phase==='lost'){showDialog('小口袋有点挤了',`这一局还没有结束。\n${game.rescueUsed>=1?'本局挪走三张机会已用完，可以撤回或重新开始。':'可挪走三张，腾出空间继续；每局仅一次。'}`,[...(game.rescueUsed<1&&!game.reserve.length?[{label:'挪走三张，继续玩（剩1次）',primary:true,action:stash}]:[]),...(history.length?[{label:'撤回上一步',primary:game.rescueUsed>=1||!!game.reserve.length,action:undo}]:[]),{label:'重新开始这一局',action:()=>start(game.mode,game.seed,game.kind==='daily'?game.dailyDate:null)},{label:'回到牧场',ghost:true}],'TAKE A LITTLE BREATH');}}
+  function paintPickQueue(){
+    document.querySelectorAll('#board .tile,[data-reserve]').forEach(button=>{
+      const id=Number(button.dataset.id??button.dataset.reserve),tile=game.tiles[id],queued=pendingPickIds.has(id);
+      button.classList.toggle('queued',queued);
+      button.setAttribute('aria-label',`${button.dataset.reserve!==undefined?'取回':''}${names[tile.type]}${queued?'，已选择，等待入槽':tile.loc==='board'&&!C.free(game,tile)?'，被遮挡':''}`);
+    });
+  }
+  function pick(id,element){
+    if($('modal').open)return;
+    if(game.phase!=='playing'){if(!busy&&!drainingPicks&&game.phase==='lost')checkResult();return;}
+    const tile=game.tiles[id];
+    if(!tile||pendingPickIds.has(id)||!(tile.loc==='reserve'||C.free(game,tile)))return;
+    pickQueue.push({id,rect:element.getBoundingClientRect()});pendingPickIds.add(id);paintPickQueue();
+    void drainPicks();
+  }
+  async function drainPicks(){
+    if(drainingPicks)return;
+    drainingPicks=true;
+    try{
+      while(pickQueue.length&&game.phase==='playing'&&!$('modal').open){
+        const item=pickQueue.shift(),tile=game.tiles[item.id];pendingPickIds.delete(item.id);
+        if(!tile||!(tile.loc==='reserve'||C.free(game,tile))){paintPickQueue();continue;}
+        const button=document.querySelector(`.tile[data-id="${item.id}"],[data-reserve="${item.id}"]`);
+        await animatePick(item.id,button||{getBoundingClientRect:()=>item.rect});
+      }
+    }catch(error){
+      console.error('Card animation interrupted',error);toast('动画已恢复，可以继续选牌。');
+    }finally{
+      const cancelled=pickQueue.length>0&&game.phase==='lost';
+      pickQueue.length=0;pendingPickIds.clear();drainingPicks=false;busy=false;paintPickQueue();fitScreen();
+      if(cancelled)toast('收集槽已满，后续选牌已取消。');
+    }
+    if(game.phase!=='playing')checkResult();
+  }
+  async function animatePick(id,element){
     if(game.phase!=='playing')return;
     const before=C.clone(game),rect=element.getBoundingClientRect(),type=game.tiles[id].type;
     const landing=before.tray.slice();let last=-1;
@@ -199,10 +300,10 @@ const SheepCore = (() => {
       fly=document.createElement('div');fly.className='fly';fly.innerHTML=svg(icons[type]);
       fly.style.cssText=`left:${target.left}px;top:${target.top}px;width:${target.width}px;height:${target.height}px;transform-origin:top left;transition:none`;
       document.body.appendChild(fly);
-      await play(fly,[{transform:`translate(${rect.left-target.left}px,${rect.top-target.top}px) scale(${rect.width/target.width},${rect.height/target.height})`},{transform:'translate(0,0) scale(1)'}],{duration:reduced?1:360,easing:'cubic-bezier(.22,.68,.28,1)',fill:'forwards'});
+      await play(fly,[{transform:`translate(${rect.left-target.left}px,${rect.top-target.top}px) scale(${rect.width/target.width},${rect.height/target.height})`},{transform:'translate(0,0) scale(1)'}],{duration:reduced?1:(pickQueue.length?210:320),easing:'cubic-bezier(.22,.68,.28,1)',fill:'forwards'});
       const landed=$('tray').querySelector(`[data-tray-id="${id}"]`);landed.style.visibility='visible';fly.remove();fly=null;
       // Hold the landed tile steady before the match effect starts.
-      if(result.matched&&!reduced)await new Promise(resolve=>setTimeout(resolve,100));
+      if(result.matched&&!reduced)await new Promise(resolve=>setTimeout(resolve,pickQueue.length?60:100));
       if(result.matched){
         tone(true);
         const matches=landing.filter(n=>game.tiles[n].type===type);
@@ -217,10 +318,9 @@ const SheepCore = (() => {
         }));
       }
     }finally{fly?.remove();render();save();busy=false;}
-    if(game.phase!=='playing')checkResult();
   }
-  function start(mode,seed=freshSeed()){clearTimeout(pendingResult);game=C.create(mode,seed);history=[];busy=false;render();save();toast('新的小牧场，慢慢来。');}
-  function undo(){if(busy||!history.length)return;const elapsed=game.seconds,credited=game.credited,shuffleUsed=game.shuffleUsed,rescueUsed=game.rescueUsed;game=history.pop();game.seconds=elapsed;game.shuffleUsed=Math.max(game.shuffleUsed,shuffleUsed);game.rescueUsed=Math.max(game.rescueUsed,rescueUsed);if(credited||sessionWins.has(`${game.mode}:${game.seed}`))game.credited=true;render();save();toast('已撤回上一次操作。');}
+  function start(mode,seed=freshSeed(),day=null){clearTimeout(pendingResult);pickQueue.length=0;pendingPickIds.clear();game=C.create(mode,seed);game.kind=day?'daily':'random';game.dailyDate=day;history=[];busy=false;render();save();toast(day?'每日一局已开始，失败可以重试。':'新的小牧场，慢慢来。');}
+  function undo(){if(busy||!history.length)return;const elapsed=game.seconds,credited=game.credited,shuffleUsed=game.shuffleUsed,rescueUsed=game.rescueUsed,undoUsed=game.undoUsed,hintUsed=game.hintUsed,hadLoss=game.hadLoss,ratingEligible=game.ratingEligible,kind=game.kind,dailyDate=game.dailyDate;game=history.pop();game.seconds=elapsed;game.shuffleUsed=Math.max(game.shuffleUsed,shuffleUsed);game.rescueUsed=Math.max(game.rescueUsed,rescueUsed);game.undoUsed=Math.max(game.undoUsed,undoUsed)+1;game.hintUsed=Math.max(game.hintUsed,hintUsed);game.hadLoss=game.hadLoss||hadLoss;game.ratingEligible=ratingEligible;game.kind=kind;game.dailyDate=dailyDate;if(credited||sessionWins.has(`${game.mode}:${game.seed}`))game.credited=true;render();save();toast('已撤回上一次操作。');}
   function stash(){
     if(busy)return;
     if(game.rescueUsed>=1){toast('本局挪走三张机会已用完。');return;}
@@ -235,25 +335,98 @@ const SheepCore = (() => {
     if(C.reshuffle(game,freshSeed())){history.push(before);if(history.length>80)history.shift();render();save();toast(`洗好啦！本局还可洗牌 ${2-game.shuffleUsed} 次。`);}
     else toast('当前槽位太挤，先凑齐三张或撤回，再洗牌；本次不扣次数。');
   }
-  function hint(){if(busy||game.phase!=='playing')return;clearTimeout(hintTimer);document.querySelectorAll('.hinted').forEach(n=>n.classList.remove('hinted'));const held=Array(12).fill(0);game.tray.forEach(id=>held[game.tiles[id].type]++);const options=game.tiles.filter(t=>t.loc==='reserve'||C.free(game,t));if(!options.length)return;const visible=Array(12).fill(0);options.forEach(t=>visible[t.type]++);options.sort((a,b)=>{const score=t=>held[t.type]*20+(visible[t.type]+held[t.type]>=3?15:0)+t.z;return score(b)-score(a);});const choice=options[0],button=choice.loc==='reserve'?document.querySelector(`[data-reserve="${choice.id}"]`):document.querySelector(`.tile[data-id="${choice.id}"]`);button?.classList.add('hinted');toast(held[choice.type]===2?'这张正好能凑成三个！':'可以优先考虑这张；提示不保证后续通关。');hintTimer=setTimeout(()=>button?.classList.remove('hinted'),3500);}
-  function showDialog(title,copy,actions,kicker='YOUR LITTLE MEADOW'){const modal=$('modal');$('modal-content').innerHTML=`<svg class="modal-art" aria-hidden="true"><use href="#sheep"/></svg><div class="modal-kicker">${kicker}</div><h2 class="modal-title" id="modal-title"></h2><p class="modal-copy"></p><div class="modal-actions"></div>`;$('modal-title').textContent=title;modal.querySelector('.modal-copy').textContent=copy;const container=modal.querySelector('.modal-actions');actions.forEach(item=>{const button=document.createElement('button');button.className=item.primary?'primary':item.ghost?'ghost':'';button.textContent=item.label;button.onclick=()=>{modal.close();item.action?.();};container.appendChild(button);});if(!modal.open)modal.showModal();}
-  function confirmNew(mode){if(busy)return;if(game.moves&&game.phase==='playing')showDialog('去一片新的草地？','当前这一局的进度会被替换。\n新的关卡也有一条通关路线。',[{label:'开始新一局',primary:true,action:()=>start(mode)},{label:'留在这一局',ghost:true}]);else start(mode);}
+  function hint(){if(busy||game.phase!=='playing')return;clearTimeout(hintTimer);document.querySelectorAll('.hinted').forEach(n=>n.classList.remove('hinted'));const held=Array(12).fill(0);game.tray.forEach(id=>held[game.tiles[id].type]++);const options=game.tiles.filter(t=>t.loc==='reserve'||C.free(game,t));if(!options.length)return;const visible=Array(12).fill(0);options.forEach(t=>visible[t.type]++);options.sort((a,b)=>{const score=t=>held[t.type]*20+(visible[t.type]+held[t.type]>=3?15:0)+t.z;return score(b)-score(a);});const choice=options[0],button=choice.loc==='reserve'?document.querySelector(`[data-reserve="${choice.id}"]`):document.querySelector(`.tile[data-id="${choice.id}"]`);game.hintUsed++;save();button?.classList.add('hinted');toast(held[choice.type]===2?'这张正好能凑成三个！':'可以优先考虑这张；提示不保证后续通关。');hintTimer=setTimeout(()=>button?.classList.remove('hinted'),3500);}
+  function showDialog(title,copy,actions,kicker='YOUR LITTLE MEADOW'){const modal=$('modal');modal.classList.remove('collection-view');$('modal-content').innerHTML=`<svg class="modal-art" aria-hidden="true"><use href="#sheep"/></svg><div class="modal-kicker">${kicker}</div><h2 class="modal-title" id="modal-title"></h2><p class="modal-copy"></p><div class="modal-actions"></div>`;$('modal-title').textContent=title;modal.querySelector('.modal-copy').textContent=copy;const container=modal.querySelector('.modal-actions');actions.forEach(item=>{const button=document.createElement('button');button.className=item.primary?'primary':item.ghost?'ghost':'';button.textContent=item.label;button.onclick=()=>{modal.close();item.action?.();};container.appendChild(button);});if(!modal.open)modal.showModal();}
+  function confirmNew(mode){requestStart(mode);}
   function confetti(){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;for(let i=0;i<32;i++){const piece=document.createElement('i');piece.className='confetti';piece.style.cssText=`left:${Math.random()*100}%;background:${['#a5bc83','#e9c77a','#cda391','#d6dcb6'][i%4]};animation-delay:${Math.random()*.5}s;--drift:${Math.random()*200-100}px`;document.body.appendChild(piece);setTimeout(()=>piece.remove(),3400);}}
   function settings(){
     if(busy)return;
-    showDialog('牧场设置','选择难度会开始新的一局。',[
-      {label:'新一局',action:()=>confirmNew(game.mode)},
-      {label:sound?'音效：开 · 点击关闭':'音效：关 · 点击开启',action:()=>{sound=!sound;updateSound();tone();save();}},
-      {label:'玩法说明',action:()=>showDialog('怎么玩','点击亮色卡牌，三个相同图案自动消除。\n灰暗卡牌要先移开上面的牌。\n洗牌每局两次；失败后可挪走三张一次。\n撤回不返还已使用的道具次数。\n暂存的牌点击取回；全部消除即可获胜。',[{label:'知道了',primary:true}])},
-      {label:'保存单文件游戏',action:()=>$('download-btn').click()},
-      {label:'继续游戏',primary:true}
-    ]);
-    const row=document.createElement('div');row.className='settings-grid';
-    [['easy','轻松'],['normal','标准'],['hard','挑战']].forEach(([mode,label])=>{const b=document.createElement('button');b.textContent=label;b.classList.toggle('active',game.mode===mode);b.setAttribute('aria-pressed',String(game.mode===mode));b.onclick=()=>{$('modal').close();if(game.mode!==mode)confirmNew(mode);};row.appendChild(b);});
-    $('modal-content').insertBefore(row,$('modal-content').querySelector('.modal-actions'));
+    const today=profile.records[R.key('normal',R.dailySeed(R.dateKey()))],total=R.totals(profile);
+    collectionPanel('牧场设置','自由练习随时换难度，每日一局每天一副固定牌。',`<div class="settings-summary">${total.wins} 副牌通关 · 累计 ${total.stars} 星</div><div class="menu-grid"><button data-menu="farm">我的牧场</button><button data-menu="achievements">成就与记录</button><button data-menu="daily">每日一局 · ${today?today.stars+'星':'未完成'}</button><button data-menu="help">玩法与星级</button><button data-menu="backup">保存与备份</button><button data-menu="sound">音效：${sound?'开':'关'}</button></div>`,[{label:'新开一局自由练习',action:()=>requestStart(game.mode)},{label:'继续游戏',primary:true}]);
+    const row=document.createElement('div');row.className='settings-grid';row.setAttribute('aria-label','自由练习难度');
+    [['easy','轻松'],['normal','标准'],['hard','挑战']].forEach(([mode,label])=>{const b=document.createElement('button');b.textContent=label;b.classList.toggle('active',game.mode===mode);b.setAttribute('aria-pressed',String(game.mode===mode));b.onclick=()=>{$('modal').close();if(game.mode!==mode||game.kind==='daily')requestStart(mode);};row.appendChild(b);});
+    $('modal-content').insertBefore(row,$('modal-content').querySelector('.collection-content'));
+    const handlers={farm:showFarm,achievements:showAchievements,daily:showDaily,backup:showBackup,help:()=>collectionPanel('玩法与星级','点击亮牌入槽，三张相同即可消除。',`<div class="daily-card"><p>洗牌每局 2 次；失败后可挪走三张 1 次。撤回不返还道具次数，挪走的牌仍需取回并消除。</p><p>★ 成功通关<br>★★ 未使用挪走三张<br>★★★ 未使用洗牌、挪走、撤回或提示</p><p>每副牌保存最高星级，重试可提升纪录。首次通关不同牌局，会为牧场添加装饰。</p></div>`,[{label:'返回设置',action:settings},{label:'继续游戏',primary:true}]),sound:()=>{sound=!sound;updateSound();tone();save();settings();}};
+    $('modal-content').querySelectorAll('[data-menu]').forEach(b=>b.onclick=()=>handlers[b.dataset.menu]());
   }
+  function starsMarkup(value,cls=''){return `<div class="reward-stars ${cls}" role="img" aria-label="${value} 星，满分 3 星">${[1,2,3].map(n=>`<svg viewBox="0 0 24 24" class="${n<=value?'lit':'unlit'}" style="--star-delay:${(n-1)*110}ms" aria-hidden="true"><path d="m12 1.5 3.1 6.4 7.1 1-5.1 5 1.2 7.1-6.3-3.3-6.3 3.3 1.2-7.1-5.1-5 7.1-1Z"/></svg>`).join('')}</div>`;}
+  function collectionPanel(title,copy,html,actions){
+    showDialog(title,copy,actions);$('modal').classList.add('collection-view');
+    const panel=document.createElement('div');panel.className='collection-content';panel.innerHTML=html;
+    $('modal-content').insertBefore(panel,$('modal-content').querySelector('.modal-actions'));
+    $('modal-title').tabIndex=-1;$('modal-title').focus({preventScroll:true});$('modal').scrollTop=0;
+  }
+  function farmMarkup(){
+    const growth=Math.min(R.totals(profile).wins,R.assets.length),parts=[];
+    if(growth>=2)parts.push('<g stroke="#5f8f31" stroke-width="2"><path d="M38 173v-18m16 24v-14m-9 3v-18"/><g fill="#ffd56b" stroke="#d28b30"><circle cx="38" cy="152" r="5"/><circle cx="54" cy="163" r="5"/></g><circle cx="45" cy="147" r="6" fill="#f5a5aa"/></g>');
+    if(growth>=3)parts.push('<g stroke="#a4763e" stroke-width="5" stroke-linecap="round"><path d="M17 139h88m-88 12h88m-80-20v27m24-27v27m24-27v27m24-27v27"/></g>');
+    if(growth>=1)parts.push('<use href="#sheep" x="83" y="116" width="60" height="60"/>');
+    if(growth>=4)parts.push('<path d="M301 142v-42" stroke="#90633b" stroke-width="9" stroke-linecap="round"/><path d="M274 95c-9-20 13-38 27-25 17-20 39 0 27 18 18 17-2 38-19 28-23 16-48-3-35-21" fill="#79ad41" stroke="#47792c" stroke-width="2"/>');
+    if(growth>=5)parts.push('<ellipse cx="270" cy="174" rx="35" ry="15" fill="#93c9c4" stroke="#6e9d77" stroke-width="4"/><path d="M250 174h19m-5 6h21" stroke="#def4dd" stroke-width="2" stroke-linecap="round"/>');
+    if(growth>=6)parts.push('<path d="M179 143c-27 17 9 21-27 46" fill="none" stroke="#c7b787" stroke-width="17" stroke-linecap="round"/><g stroke="#f1e6be" stroke-width="4"><path d="m164 155 14 4m-13 8 15 6m-22 4 14 9"/></g>');
+    if(growth>=7)parts.push('<path d="M145 101h72v49h-72Z" fill="#e5b274" stroke="#805e37" stroke-width="3"/><path d="m135 104 45-39 47 39Z" fill="#c76a50" stroke="#80513a" stroke-width="3"/><path d="M169 150v-28h22v28" fill="#8e713d"/><path d="M151 111h12v13h-12Z" fill="#fff1bb"/>');
+    if(growth>=8)parts.push('<use href="#sheep" x="209" y="121" width="50" height="50"/><use href="#sheep" x="191" y="155" width="39" height="39"/>');
+    if(growth>=9)parts.push('<path d="m40 122 7-49h16l7 49Z" fill="#e8d39d" stroke="#8d7546" stroke-width="2"/><g stroke="#9b8147" stroke-width="4" stroke-linecap="round"><path d="m55 59 0 35m-18-18h35"/><path d="m55 59 12-12m-12 47-12 12m-6-30-12-12m47 12 12 12"/></g><circle cx="55" cy="76" r="5" fill="#fff3be"/>');
+    if(growth>=10)parts.push('<g fill="#d57548" stroke="#8b5932" stroke-width="1.5"><circle cx="287" cy="93" r="5"/><circle cx="310" cy="82" r="5"/><circle cx="316" cy="103" r="5"/></g>');
+    if(growth>=11)parts.push('<g fill="#f7ca61" stroke="#b78a48" stroke-width="1.5"><path d="M118 71c-15-19-23 5-5 8-11 13 8 19 9 3 13 16 25 0 9-6 20-8 2-23-7-5Z"/><path d="M249 58c-9-12-16 3-4 6-8 9 5 13 7 2 9 9 15-2 5-5 12-5 0-15-6-5Z"/></g>');
+    if(growth>=12)parts.push('<path d="M328 168v-40" stroke="#6b6535" stroke-width="3"/><path d="m329 129 21 5-21 10Z" fill="#eebd52" stroke="#9b7c35" stroke-width="2"/>');
+    return `<svg class="farm-scene" viewBox="0 0 360 210" role="img" aria-label="我的牧场，已获得 ${growth} 件装饰"><rect width="360" height="210" rx="16" fill="#e7f5c6"/><circle cx="278" cy="43" r="21" fill="#f8da7c"/><path d="M0 115Q60 57 124 106q68-41 121 1 66-39 115-7v110H0" fill="#b9d68a"/><path d="M0 155q100-62 189-17 101-34 171 6v66H0" fill="#9ec66e"/><g fill="none" stroke="#769d47" stroke-width="2" stroke-linecap="round"><path d="m22 184 3-8 3 8 4-5m52 20 2-7 3 7m156-8 3-8 3 8 4-4m88 8 2-7 3 7"/></g>${parts.join('')}</svg>`;
+  }
+  function showFarm(){
+    if(busy)return;const total=R.totals(profile),growth=Math.min(total.wins,R.assets.length);
+    const next=growth<R.assets.length?`再首次通关一副新牌，获得「${R.assets[growth]}」。`:'牧场已经建成，继续收集星星和成就。';
+    collectionPanel('我的小牧场',next,`${farmMarkup()}<div class="record-stats"><div><b>${total.wins}</b><span>不同牌局通关</span></div><div><b>${total.stars}</b><span>累计最高星级</span></div><div><b>${growth}/12</b><span>牧场装饰</span></div></div><div class="farm-growth" role="progressbar" aria-label="牧场成长" aria-valuemin="0" aria-valuemax="12" aria-valuenow="${growth}"><i style="width:${growth/12*100}%"></i></div><p class="panel-note">同一副牌重复通关可提升最高星级，装饰只在首次通关时获得。${profile.legacyWins?'原有通关次数已计入牧场成长。':''}</p>`,[{label:'查看成就与记录',action:showAchievements},{label:'返回游戏',primary:true}]);
+  }
+  function showAchievements(){
+    if(busy)return;const unlocked=R.badges.filter(b=>profile.badges[b.id]).length,records=Object.values(profile.records);
+    const badgeHtml=R.badges.map(b=>`<div class="achievement ${profile.badges[b.id]?'earned':'locked'}"><div class="badge-art">${svg(b.icon)}</div><div><strong>${b.name}</strong><p>${b.copy}</p><small>${profile.badges[b.id]?'已获得 · '+profile.badges[b.id].slice(0,10):'尚未获得'}</small></div></div>`).join('');
+    const best=Object.entries(R.modeNames).map(([mode,name])=>{const subset=records.filter(r=>r.mode===mode),star=subset.length?Math.max(...subset.map(r=>r.stars)):0;return `<div class="mode-record"><b>${name}</b>${starsMarkup(star,'small-stars')}<span>${subset.length} 副通关</span></div>`;}).join('');
+    collectionPanel('成就与记录',`已获得 ${unlocked} / ${R.badges.length} 个成就`,`${badgeHtml}<div class="mode-records">${best}</div><p class="panel-note">最高星级按不同牌局累计；重复同一副牌不会反复增加通关数。</p>`,[{label:'看看我的牧场',action:showFarm},{label:'返回游戏',primary:true}]);
+  }
+  function showDaily(){
+    if(busy)return;const day=R.dateKey(),seed=R.dailySeed(day),record=profile.records[R.key('normal',seed)],active=game.kind==='daily'&&game.dailyDate===day&&game.phase==='playing';
+    collectionPanel('每日一局',`${day.replaceAll('-',' / ')} · 标准难度`,`${starsMarkup(record?.stars||0)}<div class="daily-card"><strong>${record?'今日已通关，最高 '+record.stars+' 星':'今天的草地，等你来收集'}</strong><p>每天一副固定牌局，失败可以重试。当天保留最高星级，首次通关也会让牧场成长。</p><p>离线也能玩，日期跟随这台设备。</p></div>`,[{label:active?'继续今日挑战':record?'再试一次，挑战三星':'开始今日挑战',primary:true,action:()=>{if(!active)requestStart('normal',seed,day);}},{label:'返回游戏',ghost:true}]);
+  }
+  function showVictory(){
+    const result=R.award(profile,game);game.credited=true;wins=R.totals(profile).wins;save();$('wins').textContent=wins;
+    const label=game.kind==='daily'?`${game.dailyDate} · 每日一局`:`${R.modeNames[game.mode]} · 自由练习`;
+    const reason=result.importedOld||!game.ratingEligible?'这局从旧版继续，以通关一星记入；新局开始完整评价。':result.stars===3?'全程未用道具，这局拿到三星！':result.stars===2?'没有挪走三张，获得两星；下次试试全程不用道具。':'成功通关，获得一星；不用挪走三张可挑战两星。';
+    const newBadges=result.newBadges.map(id=>R.badges.find(b=>b.id===id));
+    const notice=result.first?'首次通关这副牌':result.improved?'刷新这副牌的最高星级':'这副牌最高 '+result.bestStars+' 星';
+    const growth=Math.min(wins,R.assets.length);
+    collectionPanel('收集完成！',`${label} · 全部 ${game.tiles.length} 张`,`${starsMarkup(result.stars,'victory-stars')}<p class="rating-note">${reason}</p><div class="result-summary"><strong>${notice}</strong><span>${result.deltaStars>0?'累计星星 +'+result.deltaStars:'已保留最高纪录'} · 本局 ${time(game.seconds)}</span></div>${result.asset?`<div class="farm-reward">${farmMarkup()}<strong>牧场添新物：${result.asset}</strong><span>成长 ${growth} / 12</span></div>`:''}${newBadges.length?`<div class="new-badges">${newBadges.map(b=>`<span>新成就 · ${b.name}</span>`).join('')}</div>`:''}`,game.kind==='daily'?[
+      {label:result.stars<3?'重试今日牌局，挑战三星':'再玩这副牌',primary:true,action:()=>start('normal',game.seed,game.dailyDate)},
+      {label:'看看我的牧场',action:showFarm},{label:'返回游戏',ghost:true}
+    ]:[{label:'再玩一局',primary:true,action:()=>start(game.mode)},{label:'看看我的牧场',action:showFarm},{label:'返回游戏',ghost:true}]);
+    confetti();
+  }
+  function requestStart(mode,seed=freshSeed(),day=null){
+    if(busy)return;
+    const begin=()=>start(mode,seed,day);
+    if(game.moves&&game.phase==='playing')showDialog('开始另一局？','当前牌局会被替换，已经获得的星星、牧场和成就都会保留。',[{label:day?'开始每日一局':'开始新一局',primary:true,action:begin},{label:'继续当前这一局',ghost:true}]);else begin();
+  }
+  function downloadText(content,name,type){const url=URL.createObjectURL(new Blob([content],{type})),a=document.createElement('a');a.href=url;a.download=name;a.style.display='none';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);}
+  function showBackup(){
+    collectionPanel('保存与备份','星星、牧场和成就保存在当前浏览器。',`<div class="daily-card"><p>清理浏览器数据、换设备或从本地文件切到网页链接，都可能读不到原记录。可导出存档，再在新的浏览器中导入。</p><p>存档包含当前牌局、道具次数和牧场记录。导入时会合并已有成就，并载入存档中的牌局。</p><p>微信若不支持文件下载或选取，可从右上角菜单在 Safari 中打开后操作。</p></div>`,[
+      {label:'导出存档',primary:true,action:()=>{downloadText(JSON.stringify({format:'sheep-meadow-save',version:1,game,history,profile,sound,wins},null,2),`羊咩咩-存档-${R.dateKey()}.json`,'application/json');toast('存档已导出，请保存在文件中。');}},
+      {label:'导入存档',action:()=>$('backup-input').click()},
+      {label:'保存完整 HTML 游戏',action:()=>$('download-btn').click()},
+      {label:'返回游戏',ghost:true}
+    ]);
+  }
+  $('backup-input').addEventListener('change',async event=>{
+    const file=event.target.files?.[0];event.target.value='';if(!file)return;
+    try{
+      if(file.size>4*1024*1024)throw Error('存档文件过大');
+      const raw=JSON.parse(await file.text());
+      if(!raw||raw.format!=='sheep-meadow-save'||raw.version!==1||raw.profile?.version!==1||!C.valid(raw.game)||(raw.game.kind==='daily'&&(!R.dateValid(raw.game.dailyDate)||R.dailySeed(raw.game.dailyDate)!==raw.game.seed)))throw Error('不是当前版本的有效存档');
+      const loadedProfile=R.normalize(raw.profile),loadedHistory=Array.isArray(raw.history)?raw.history.filter(s=>C.valid(s)&&s.mode===raw.game.mode&&s.seed===raw.game.seed).slice(-80):[];
+      showDialog('载入这个存档？',`将载入${R.modeNames[raw.game.mode]}牌局，并合并 ${R.totals(loadedProfile).stars} 颗星的牧场记录。当前未完成牌局会被替换。`,[{label:'合并记录并载入',primary:true,action:()=>{clearTimeout(pendingResult);profile=R.merge(profile,loadedProfile);game=raw.game;history=loadedHistory;wins=R.totals(profile).wins;sound=raw.sound===true;render();save();toast('存档已载入，牧场记录已合并。');if(game.phase!=='playing')checkResult();}},{label:'取消',ghost:true}]);
+    }catch(error){toast('无法导入：请选择有效的羊咩咩 JSON 存档，文件不能超过 4MB。');}
+  });
+
   $('sound-btn').onclick=()=>{sound=!sound;updateSound();tone();save();};$('help-btn').onclick=()=>showDialog('欢迎来到小牧场','① 点击未被遮挡的卡牌，放进七格收集槽。\n② 三张相同图案自动消除，清空全部卡牌获胜。\n③ 槽位满了可撤回，或使用每局一次的挪走三张。\n\n撤回不限次数；洗牌每局两次；失败后挪走三张每局一次。\n小口袋里的牌需要点击取回，也要全部消除。\n快捷键 Z 撤回，H 提示；进度只保存在本机。',[{label:'知道啦，去玩吧',primary:true}]);$('restart-btn').onclick=()=>confirmNew(game.mode);document.querySelectorAll('.mode').forEach(button=>button.onclick=()=>{if(button.dataset.mode!==game.mode)confirmNew(button.dataset.mode);});$('undo-btn').onclick=undo;$('shuffle-btn').onclick=shuffle;$('pocket-btn').onclick=stash;$('hint-btn').onclick=hint;
-  $('download-btn').onclick=()=>{const copy=document.documentElement.cloneNode(true);copy.querySelectorAll('.fly,.confetti').forEach(n=>n.remove());copy.querySelector('#modal').removeAttribute('open');copy.querySelector('#modal-content').innerHTML='';copy.querySelector('#toast').textContent='';copy.querySelector('#toast').classList.remove('show');const url=URL.createObjectURL(new Blob(['<!doctype html>\n'+copy.outerHTML],{type:'text/html;charset=utf-8'}));const anchor=document.createElement('a');anchor.href=url;anchor.download='羊咩咩-手机草地版.html';anchor.click();setTimeout(()=>URL.revokeObjectURL(url),5000);toast('已保存完整游戏文件，可以直接发送给朋友。');};
+  $('download-btn').onclick=()=>{const copy=document.documentElement.cloneNode(true);copy.querySelectorAll('.fly,.confetti,.match-burst').forEach(n=>n.remove());copy.querySelector('#modal').removeAttribute('open');copy.querySelector('#modal-content').innerHTML='';copy.querySelector('#toast').textContent='';copy.querySelector('#toast').classList.remove('show');const url=URL.createObjectURL(new Blob(['<!doctype html>\n'+copy.outerHTML],{type:'text/html;charset=utf-8'}));const anchor=document.createElement('a');anchor.href=url;anchor.download='羊咩咩-手机草地版.html';anchor.style.display='none';document.body.appendChild(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);toast('已保存完整游戏文件，可以直接发送给朋友。');};
   document.addEventListener('keydown',event=>{if($('modal').open||event.ctrlKey||event.metaKey||event.altKey||event.repeat)return;if(event.key.toLowerCase()==='z'){event.preventDefault();undo();}if(event.key.toLowerCase()==='h'){event.preventDefault();hint();}});
   setInterval(()=>{if(game.phase==='playing'&&!document.hidden&&!$('modal').open){game.seconds++;$('timer').textContent=time(game.seconds);if(game.seconds%5===0)save();}},1000);document.addEventListener('visibilitychange',save);window.addEventListener('pagehide',save);
   $('help-btn').onclick=settings;$('help-btn').title='设置';$('help-btn').setAttribute('aria-label','设置');
